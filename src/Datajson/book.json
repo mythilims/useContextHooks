@@ -1,0 +1,73 @@
+[
+    {
+      "title": "The Great Gatsby",
+      "author": "F. Scott Fitzgerald",
+      "image": "https://images.gr-assets.com/books/1490528560l/4671.jpg",
+      "website": "https://www.goodreads.com/book/show/4671.The_Great_Gatsby",
+      "des":"The only edition of the beloved classic that is authorized by Fitzgerald’s family and from his lifelong publisher.This edition is the enduring original text, updated with the author’s own revisions, a foreword by his granddaughter, and with a new introduction by National Book Award winner Jesmyn Ward. The Great Gatsby, F. Scott Fitzgerald’s third book, stands as the supreme achievement of his career. First published by Scribner in 1925, this quintessential novel of the Jazz Age has been acclaimed by generations of readers. The story of the mysteriously wealthy Jay Gatsby and his love for the beautiful Daisy Buchanan is an exquisitely crafted tale of America in the 1920s."
+    },
+    {
+      "title": "1984",
+      "author": "George Orwell",
+      "image": "https://images.gr-assets.com/books/1348990566l/5470.jpg",
+      "website": "https://www.goodreads.com/book/show/5470.1984",
+      "des":"The year 1984 has come and gone, but George Orwell's prophetic, nightmarish vision in 1949 of the world we were becoming is timelier than ever. 1984 is still the great modern classic of negative utopia —a startlingly original and haunting novel that creates an imaginary world that is completely convincing, from the first sentence to the last four words. No one can deny the novel's hold on the imaginations of whole generations, or the power of its admonitions—a power that seems to grow, not lessen, with the passage of time."
+    },
+    {
+      "title": "To Kill a Mockingbird",
+      "author": "Harper Lee",
+      "image": "https://images.gr-assets.com/books/1553383690l/2657.jpg",
+      "website": "https://www.goodreads.com/book/show/2657.To_Kill_a_Mockingbird",
+      "des":"A lawyer's advice to his children as he defends the real mockingbird of Harper Lee's classic novel - a black man charged with the rape of a white girl. Through the young eyes of Scout and Jem Finch, Harper Lee explores with exuberant humour the irrationality of adult attitudes to race and class in the Deep South of the 1930s. The conscience of a town steeped in prejudice, violence and hypocrisy is pricked by the stamina of one man's struggle for justice. But the weight of history will only tolerate so much."
+    },
+    {
+      "title": "Pride and Prejudice",
+      "author": "Jane Austen",
+      "image": "https://images.gr-assets.com/books/1320399351l/1885.jpg",
+      "website": "https://www.gutenberg.org/ebooks/1342",
+      "des":"Pride and Prejudice by Jane Austen is a classic novel written in the early 19th century. The story delves into themes of love, social class, and individual agency, largely revolving around the life of Elizabeth Bennet, one of five sisters from a modest but genteel family navigating the complex social landscape of Regency England. The opening of the novel introduces the seemingly universal truth that a single man of wealth is a target for matchmaking mothers in the neighborhood. Mrs. Bennet is eager to marry off her daughters and is excited to hear about the arrival of Mr. Bingley, a wealthy young man who has taken up residence at Netherfield Park. Mr. Bennet's teasing yet indifferent nature contrasts sharply with Mrs. Bennet's anxious and businesslike demeanor as she plans to visit Mr. Bingley to create an opportunity for her daughters"
+    },
+    {
+      "title": "The Catcher in the Rye",
+      "author": "J.D. Salinger",
+      "image": "https://images.gr-assets.com/books/1398034300l/5107.jpg",
+      "website": "https://www.goodreads.com/book/show/5107.The_Catcher_in_the_Rye",
+      "des":"Fleeing the crooks at Pencey Prep, he pinballs around New York City seeking solace in fleeting encounters—shooting the bull with strangers in dive hotels, wandering alone round Central Park, getting beaten up by pimps and cut down by erstwhile girlfriends. The city is beautiful and terrible, in all its neon loneliness and seedy glamour, its mingled sense of possibility and emptiness. Holden passes through it like a ghost, thinking always of his kid sister Phoebe, the only person who really understands him, and his determination to escape the phonies and find a life of true meaning"
+    },
+    {
+      "title": "The Hobbit",
+      "author": "J.R.R. Tolkien",
+      "image": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1546071216i/5907.jpg",
+      "website": "https://www.goodreads.com/book/show/5907.The_Hobbit",
+      "des":"In a hole in the ground there lived a hobbit. Not a nasty, dirty, wet hole, filled with the ends of worms and an oozy smell, nor yet a dry, bare, sandy hole with nothing in it to sit down on or to eat: it was a hobbit-hole, and that means comfort."
+    },
+    {
+      "title": "Moby-Dick",
+      "author": "Herman Melville",
+      "image": "https://www.gutenberg.org/cache/epub/2701/pg2701.cover.medium.jpg",
+      "website": "https://www.gutenberg.org/ebooks/2701",
+      "des":"Moby Dick; Or, The Whale by Herman Melville is a novel written in the mid-19th century. The story follows Ishmael, a sailor on a whaling voyage, who seeks adventure and escape from his gloomy life on land. As he embarks on this journey, he becomes drawn into the complex world of whaling and is introduced to the ominous figure of Captain Ahab, whose obsession with a legendary white whale ultimately drives"
+    },
+    {
+      "title": "War and Peace",
+      "author": "Leo Tolstoy",
+      "image": "https://www.gutenberg.org/cache/epub/2600/pg2600.cover.medium.jpg",
+      "website": "https://www.gutenberg.org/ebooks/2600",
+      "des":"War and Peace by graf Leo Tolstoy is a monumental novel written in the early 19th century, set against the backdrop of the Napoleonic Wars. The book interweaves the lives of several characters, primarily focusing on the Russian aristocracy and their experiences during a turbulent time in European history. Key characters introduced include Anna Pavlovna, a maid of honor and socialite, and Prince Vasili Kuragin, along with a cast of other"
+    },
+    {
+      "title": "The Alchemist",
+      "author": "Paulo Coelho",
+      "image": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1483412266i/865.jpg",
+      "website": "https://www.goodreads.com/book/show/865.The_Alchemist",
+      "des":"Paulo Coelho's masterpiece tells the mystical story of Santiago, an Andalusian shepherd boy who yearns to travel in search of a worldly treasure. His quest will lead him to riches far different, and far more satisfying, listening to our hearts, of recognizing opportunity and learning to read the omens strewn along life's path, and, most importantly, to follow our dreams."
+    },
+    {
+      "title": "Brave New World",
+      "author": "Aldous Huxley",
+      "image": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1331315450i/5479.jpg",
+      "website": "https://www.goodreads.com/book/show/5479.Brave_New_World",
+      "des":"The astonishing novel Brave New World, originally published in 1932, presents Aldous Huxley's vision of the future--of a world utterly transformed. Through the most efficient scientific and psychological engineering, people are genetically designed to be passive and therefore consistently useful to the ruling class. This powerful work of speculative fiction sheds a blazing critical light on the present and is considered to be Aldous Huxley's most enduring masterpiece."
+    }
+  ]
+  

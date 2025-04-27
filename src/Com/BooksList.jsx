@@ -1,0 +1,80 @@
+import React, { useContext } from "react";
+import book from '../Datajson/book.json';
+import { Card, CardBody, CardImg, CardTitle, Button } from "reactstrap";
+import { UserAuthDetails } from '../Context/AuthCon';
+import bgBook from '../assets/bgBook.jpg'; 
+
+function BooksList() {
+   let {selectedBook,setSelectedBook} =useContext(UserAuthDetails)
+    return (
+        <div  style={{
+                minHeight: '100vh',
+                backgroundImage: `linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(${bgBook})`,
+                backgroundSize: 'cover',
+                backgroundPosition: 'center',
+                display: 'flex',
+                justifyContent: 'center',
+                alignItems: 'center',
+              }} 
+              className={`d-flex flex-wrap gap-3 ${selectedBook ? 'justify-content-center':'justify-content-center'} p-4`}>
+            {selectedBook ? (
+                // Single book view
+                <Card style={{ width: '30rem' }} className="shadow">
+                    <CardImg 
+                        top 
+                        width="100%" 
+                        height="300px"
+                        src={selectedBook.image} 
+                        alt={selectedBook.title} 
+                    />
+                    <CardBody>
+                        <CardTitle tag="h4">{selectedBook.title}</CardTitle>
+                        <p className="text-danger" style={{ fontSize: '16px' }}>
+                            Author: {selectedBook.author}
+                        </p>
+                        <p className="mt-3">{selectedBook.des}</p>
+                        <div className="d-flex gap-2 mt-4">
+                            <Button color="primary" href={selectedBook.website} target="_blank" className="w-50">
+                                View Website
+                            </Button>
+                            <Button color="dark" onClick={() => setSelectedBook(null)} className="w-50">
+                                Back to List
+                            </Button>
+                        </div>
+                    </CardBody>
+                </Card>
+            ) : (
+                // Book list view
+                book.map((item, idx) => (
+                    <Card key={idx} style={{ width: '18rem' }} className="shadow-sm">
+                        <CardImg 
+                            top 
+                            width="100%" 
+                            height="250px"
+                            src={item.image} 
+                            alt={item.title} 
+                        />
+                        <CardBody>
+                            <CardTitle tag="h5">{item.title}</CardTitle>
+                            <p className="text-danger" style={{ fontSize: '14px' }}>
+                                Author: {item.author}
+                            </p>
+                            <div className="d-flex justify-content-center">
+
+                                <Button 
+                                    color="primary" 
+                                    className="w-50 justify-content-center" 
+                                    onClick={() => setSelectedBook(item)}
+                                >
+                                    Click & Read
+                                </Button>
+                               </div>
+                        </CardBody>
+                    </Card>
+                ))
+            )}
+        </div>
+    );
+}
+
+export default BooksList;
