@@ -2,21 +2,14 @@ import React, { useContext } from "react";
 import book from '../Datajson/book.json';
 import { Card, CardBody, CardImg, CardTitle, Button } from "reactstrap";
 import { UserAuthDetails } from '../Context/AuthCon';
-import bgBook from '../assets/bgBook.jpg'; 
-
+import '../css/common.css'
 function BooksList() {
    let {selectedBook,setSelectedBook} =useContext(UserAuthDetails)
     return (
         <div  style={{
-                minHeight: '100vh',
-                backgroundImage: `linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(${bgBook})`,
-                backgroundSize: 'cover',
-                backgroundPosition: 'center',
-                display: 'flex',
-                justifyContent: 'center',
-                alignItems: 'center',
+               
               }} 
-              className={`d-flex flex-wrap gap-3 ${selectedBook ? 'justify-content-center':'justify-content-center'} p-4`}>
+              className={`bgImage d-flex flex-wrap gap-3 ${selectedBook ? 'justify-content-center':'justify-content-center'} p-4`}>
             {selectedBook ? (
                 // Single book view
                 <Card style={{ width: '30rem' }} className="shadow">

@@ -8,16 +8,8 @@ function Login() {
 
   return (
     <div 
-      style={{
-        minHeight: '100vh',
-        backgroundImage: `linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(${bgBook})`,
-        backgroundSize: 'cover',
-        backgroundPosition: 'center',
-        display: 'flex',
-        justifyContent: 'center',
-        alignItems: 'center',
-      }}
-      className="vh-100 d-flex justify-content-center align-items-center"
+     
+      className="bgImage vh-100 d-flex justify-content-center align-items-center"
     >
      <Card 
   className="shadow-lg p-4 rounded" 
