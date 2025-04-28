@@ -1,13 +1,13 @@
-import React,{useContext} from 'react';
+import React, { useContext } from 'react';
 import { UserAuthDetails } from '../Context/AuthCon';
 import { Button } from 'reactstrap';
 
 function Header() {
-  
-  const {user,logOut,selectedBook} =useContext(UserAuthDetails);
+
+  const { user, logOut, selectedBook, bookList } = useContext(UserAuthDetails);
 
   return (
-    <header style={{
+    <div style={{
       position: 'fixed',
       top: 0,
       left: 0,
@@ -23,24 +23,27 @@ function Header() {
       zIndex: 1000
     }}>
       <h4> {user} Dashboard</h4>
-      <h4 className='book-title'>{selectedBook? `  Hi ${user} your reading now ${selectedBook.title}`:''}</h4>
+      <p>Liked Book: {bookList.filter((x => x.like)).length } 
+      <i className={bookList.filter((x => x.like)).length > 0  ? 'fas fa-heart text-danger' : 'far fa-heart text-muted'} style={{ marginRight: '5px' }} />
+     
+      </p>
+      <h4 className='book-title'>{selectedBook ? `  Hi ${user} your reading now ${selectedBook.title}` : ''}</h4>
 
 
       <div>
-        {/* Future: You can add Profile/Logout buttons here */}
-        <Button 
-  color="dark" 
-  onClick={logOut}
-  style={{
-    fontWeight: 'bold',
-    padding: '8px 20px',
-    borderRadius: '10px'
-  }}
->
-  Logout
-</Button>
+        <Button
+          color="dark"
+          onClick={logOut}
+          style={{
+            fontWeight: 'bold',
+            padding: '8px 20px',
+            borderRadius: '10px'
+          }}
+        >
+          Logout
+        </Button>
       </div>
-    </header>
+    </div>
   );
 }
 

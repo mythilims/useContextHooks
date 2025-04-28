@@ -1,25 +1,20 @@
 import React, { useContext } from "react";
-import book from '../Datajson/book.json';
 import { Card, CardBody, CardImg, CardTitle, Button } from "reactstrap";
 import { UserAuthDetails } from '../Context/AuthCon';
 import '../css/common.css'
+
 function BooksList() {
-   let {selectedBook,setSelectedBook} =useContext(UserAuthDetails)
+    let { selectedBook, setSelectedBook, bookList, setBookList } = useContext(UserAuthDetails);
+
+    const likeUpdate = (type, idx) => {
+        setBookList({ type: type, idx });
+    };
+
     return (
-        <div  style={{
-               
-              }} 
-              className={`bgImage d-flex flex-wrap gap-3 ${selectedBook ? 'justify-content-center':'justify-content-center'} p-4`}>
+        <div className={`bgImage d-flex flex-wrap gap-3 ${selectedBook ? 'justify-content-center' : 'justify-content-center'} p-4`}>
             {selectedBook ? (
-                // Single book view
                 <Card style={{ width: '30rem' }} className="shadow">
-                    <CardImg 
-                        top 
-                        width="100%" 
-                        height="300px"
-                        src={selectedBook.image} 
-                        alt={selectedBook.title} 
-                    />
+                    <CardImg top width="100%" height="300px" src={selectedBook.image} alt={selectedBook.title} />
                     <CardBody>
                         <CardTitle tag="h4">{selectedBook.title}</CardTitle>
                         <p className="text-danger" style={{ fontSize: '16px' }}>
@@ -37,31 +32,22 @@ function BooksList() {
                     </CardBody>
                 </Card>
             ) : (
-                // Book list view
-                book.map((item, idx) => (
+                bookList.map((item, idx) => (
                     <Card key={idx} style={{ width: '18rem' }} className="shadow-sm">
-                        <CardImg 
-                            top 
-                            width="100%" 
-                            height="250px"
-                            src={item.image} 
-                            alt={item.title} 
-                        />
+                        <CardImg top width="100%" height="250px" src={item.image} alt={item.title} />
                         <CardBody>
                             <CardTitle tag="h5">{item.title}</CardTitle>
                             <p className="text-danger" style={{ fontSize: '14px' }}>
                                 Author: {item.author}
                             </p>
-                            <div className="d-flex justify-content-center">
-
-                                <Button 
-                                    color="primary" 
-                                    className="w-50 justify-content-center" 
-                                    onClick={() => setSelectedBook(item)}
-                                >
+                            <div className="d-flex justify-content-center gap-3">
+                                <div onClick={() => likeUpdate(item.like ? 'unlike' : 'like', idx)}>
+                                    <i className={item.like ? 'mt-2 fas fa-heart text-danger' : 'mt-2 far fa-heart'} />
+                                </div>
+                                <Button color="primary" className="w-50 justify-content-center" onClick={() => setSelectedBook(item)}>
                                     Click & Read
                                 </Button>
-                               </div>
+                            </div>
                         </CardBody>
                     </Card>
                 ))
